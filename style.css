@@ -21,13 +21,14 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-size: 18px;
+  margin: 0;
 }
 
-display-1 {
+.display-1 {
   font-size: 110px;
 }
 
-display-2 {
+.display-2 {
   font-size: 84px;
 }
 
@@ -123,14 +124,16 @@ button:active {
 
 #hero {
     margin-top: 24px;
+    height: calc(100vh - 105px);
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+#hero>.wrapper{
     display: flex;
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-start;
-    height: 100vh;
-    background: var(--light-color);
-    color: var(--dark-color);
 }
 
 #hero>.content{
@@ -153,3 +156,81 @@ button:active {
     object-fit: cover;
     z-index: 0;
 }
+
+#about {
+    padding: 128px 0;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+.tagline>.tagline-logo {
+    margin-right: 128px;
+}
+.tagline>.section-number {
+    color: var(--text-body-dark);
+    margin-right: 24px;
+}
+#about .headline {
+    margin-left: calc(128px + 24px);
+    max-width: 664px;
+}
+#about p {
+    color: var(--text-body-dark);
+    line-height: 1.6em;
+    margin: 24px 0;
+}
+#about .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 128px;
+}
+#about .content>.content-text {
+    margin-left: calc(128px + 24px);
+    max-width: 472px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#about .carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(128px - 19px);
+    margin: 48px 0px;
+}
+#about .carrousel>.years {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 96px;
+    margin: 24px 0;
+}
+#about .carrousel>.years>.year {
+    color: var(--text-body-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+#about .carrousel>.years>.year.active {
+    color: var(--text-light);
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-weight: 800;
+    border-radius: 50%;
+    width: 312px;
+    height: 312px;
+    box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.24);
+}
+
