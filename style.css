@@ -114,6 +114,7 @@ button:active {
     text-decoration: none;
     color: var(--dark-color);
 }
+
 .navbar>.hamburger {
     display: none;
 }
@@ -257,6 +258,60 @@ button:active {
     box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.24);
 }
 
+#services {
+    padding: 128px 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    background-image: linear-gradient(to top, transparent 0%, #EDE5F0 50%);
+}
+
+#services .headline {
+    margin-left: calc(128px + 24px);
+    max-width: 664px;
+}
+
+#services .service-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 128px;
+    height: 480px;
+    border-radius: 48px;
+    background-color: var(--light-color);
+    box-shadow: 0px 56px 30px #EBE6ED;
+    box-shadow: 0px 8px 0px 0px #F5F2F6;
+}
+
+#services .service-card {
+    width: 296px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 48px;
+}
+
+#services .service-card.active {
+    height: 560px;
+    background-color: var(--primary-color);
+}
+
+#services .service-card>.service-card-icon {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 24px;
+}
+
+#services .service-card>.service-card-title {
+    color: var(--primary-color);
+}
+
+#services .service-card.active>.service-card-title {
+    color: var(--light-color);
+}
 
 @media only screen and (max-width: 1264px) {
     img {
@@ -277,7 +332,6 @@ button:active {
     #hero>.wrapper {
         flex-direction: column;
     }
-
 
     #hero .hero-img {
         display: flex;
@@ -303,6 +357,7 @@ button:active {
     #about .content>.content-text {
         margin-left: 0px;
     }
+
 }
 
 @media screen and (max-width: 796px) {
@@ -374,6 +429,44 @@ button:active {
         justify-content: center;
         margin-top: 56px;
     }
+    
+    #services .headline {
+        margin-left: 0px;
+    }
 
+    #services .service-cards {
+        flex-direction: column;
+        height: auto;
+        background-color: transparent;
+        gap: 24px;
+        box-shadow: none;
+    }
+
+    #services .service-card {
+        width: 312px;
+        height: 192px;
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border-radius: 32px;
+        box-shadow: 0px 56px 30px #EBE6ED;
+        box-shadow: 0px 8px 0px 0px #F5F2F6;
+    }
+
+    #services .service-card.active {
+        width: 312px;
+        height: 192px;
+        background-color: var(--primary-color);
+        box-shadow: none;
+    }
+
+    #services .service-card>.service-card-icon {
+    width: 91px;
+    height: 91px;
+    margin-bottom: 24px;
+}
 
 }
