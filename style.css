@@ -361,6 +361,25 @@ button:active {
     color: var(--light-color);
 }
 
+#works .headline>.text {
+    margin-left: calc(128px + 24px);
+    max-width: 664px;
+}
+
+#works .headline>.text p {
+    color: var(--text-body-light);
+    line-height: 1.6em;
+    margin: 24px 0;
+}
+
+#works .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
 @media only screen and (max-width: 1264px) {
     img {
         max-width: 100%;
@@ -538,6 +557,16 @@ button:active {
         width: 91px;
         height: 91px;
         margin-bottom: 24px;
+    }
+
+    #works .headline>.text {
+        margin-left: 0px;
+    }
+
+    #works .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
 }
