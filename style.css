@@ -191,9 +191,17 @@ button:active {
     margin-right: 24px;
 }
 
-#about .headline {
+#about .headline>h2 {
     margin-left: calc(128px + 24px);
     max-width: 664px;
+}
+
+#about .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
 
 #about p {
@@ -225,6 +233,38 @@ button:active {
     gap: calc(128px - 19px);
     margin: 48px 0px;
 }
+
+.circle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circle-button:hover {
+    background-color: #ccc;
+}
+
+.circle-button img {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
+.carrousel-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
 
 #about .carrousel>.years {
     display: flex;
@@ -265,9 +305,17 @@ button:active {
     background-image: linear-gradient(to top, transparent 0%, #EDE5F0 50%);
 }
 
-#services .headline {
+#services .headline>h2 {
     margin-left: calc(128px + 24px);
     max-width: 664px;
+}
+
+#services .headline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
 
 #services .service-cards {
@@ -326,7 +374,6 @@ button:active {
 
     .navbar>.hamburger {
         display: block;
-        margin-right: 36px;
     }
 
     #hero>.wrapper {
@@ -406,6 +453,18 @@ button:active {
         font-size: 1rem;
     }
 
+    .circle-button {
+        width: 48px;
+        height: 48px;
+        border: none;
+    }
+
+    .circle-button img {
+        width: 16px;
+        height: 16px;
+        fill: #000;
+    }
+
     #about .content {
         flex-direction: column;
     }
@@ -414,8 +473,14 @@ button:active {
         display: none;
     }
 
-    #about .headline {
+    #about .headline>h2 {
         margin-left: 0px;
+    }
+
+    #about .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
     #about .content>.content-text {
@@ -429,9 +494,15 @@ button:active {
         justify-content: center;
         margin-top: 56px;
     }
-    
-    #services .headline {
+
+    #services .headline>h2 {
         margin-left: 0px;
+    }
+
+    #services .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 
     #services .service-cards {
@@ -464,9 +535,9 @@ button:active {
     }
 
     #services .service-card>.service-card-icon {
-    width: 91px;
-    height: 91px;
-    margin-bottom: 24px;
-}
+        width: 91px;
+        height: 91px;
+        margin-bottom: 24px;
+    }
 
 }
