@@ -12,6 +12,7 @@
     --text-body-light: #606060;
     --text-body-dark: #8B8B8B;
     --text-disabled: #ADADAD;
+    --stroke-light: #D8D8D8;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -527,6 +528,91 @@ button:active {
     background-color: #FFADD0;
 }
 
+footer {
+    margin-top: 128px;
+}
+
+footer .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+footer .header>p {
+    text-align: center;
+    max-width: 568px;
+    color: var(--text-body-light);
+}
+
+footer .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    padding: 24px 36px;
+}
+
+footer .menu>li {
+    list-style: none;
+    margin: 0 12px;
+}
+
+footer .menu>li>a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-body-dark);
+}
+
+footer .menu>li:nth-child(1)>a {
+    color: var(--primary-color);
+}
+
+footer hr {
+    width: 100%;
+    border: 1px solid var(--stroke-light);
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .bottom>.copyright {
+    color: var(--text-body-light);
+}
+
+footer .bottom>.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 24px 36px;
+}
+
+footer .bottom>.social>li:nth-child(1) {
+    color: var(--primary-color);
+}
+
+footer #menu-mobile {
+    margin-top: 32px;
+    display: none;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    padding: 16px 24px ;
+    border-radius: 8px;
+    border: 1px solid var(--stroke-light);
+    background-color: var(--bg-light);
+    color: var(--text-body-light);
+}
+
+
+
 
 @media only screen and (max-width: 1264px) {
     img {
@@ -798,6 +884,27 @@ button:active {
     }
     #works .card.card-large>.circle-button {
         margin-left: 0px;
+    }
+    footer .menu {
+        display: none;
+    }
+
+    footer #menu-mobile {
+        display: block;
+    }
+    footer hr {
+        display: none;
+    }
+    footer .bottom {
+        flex-direction: column-reverse;
+    }
+    footer .bottom>.copyright {
+        margin-top: 24px;
+        font-size: 14px;
+    }
+    footer .bottom>.social>li {
+        font-size: 14px;
+        margin-top: 24px;
     }
 
 }
