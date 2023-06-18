@@ -89,6 +89,15 @@ button:active {
     opacity: 0.8;
 }
 
+.badge {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-light);
+    background: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -116,6 +125,11 @@ button:active {
     font-size: 18px;
     text-decoration: none;
     color: var(--dark-color);
+}
+
+.navbar>.menu>li>a>.badge {
+    position: relative;
+    top: -8px;
 }
 
 .navbar>.hamburger {
@@ -303,7 +317,8 @@ button:active {
     box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.24);
 }
 
-#services {
+#services,
+#jobs {
     padding: 128px 0;
     background-color: var(--light-color);
     color: var(--dark-color);
@@ -366,6 +381,10 @@ button:active {
     color: var(--light-color);
 }
 
+#works {
+    margin-bottom: 64px;
+}
+
 #works .tagline>.section-number,
 #works .tagline>.section-tagline {
     color: var(--primary-color);
@@ -423,7 +442,7 @@ button:active {
     margin-left: -128px;
 }
 
-#works .card.card-large>.card-image-mobile{
+#works .card.card-large>.card-image-mobile {
     width: auto;
     height: auto;
     display: none;
@@ -528,6 +547,69 @@ button:active {
     background-color: #FFADD0;
 }
 
+#jobs .tagline>.section-number,
+#jobs .tagline>.section-tagline {
+    color: var(--primary-color);
+}
+
+#jobs .content {
+    display: grid;
+    gap: 136px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#jobs .content>.headline {
+    margin-left: calc(128px + 24px);
+    color: var(--dark-color);
+}
+#jobs .content>.headline p {
+    color: var(--text-body-light);
+}
+#jobs .jobs-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#jobs .jobs-cards-container>.job-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 64px;
+    border-radius: 40px;
+    background-color: var(--light-color);
+    cursor: pointer;
+}
+
+#jobs .jobs-cards-container>.job-card:hover {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+}
+
+#jobs .jobs-cards-container>.job-card>.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#jobs .jobs-cards-container>.job-card>.job-experience {
+    color: var(--text-body-light);
+}
+
+#jobs .jobs-cards-container>.job-card:hover>.job-experience {
+    color: var(--text-body-dark);
+}
+
+#jobs .job-card #arrow {
+    margin-top: 32px;
+    stroke: var(--dark-color);
+}
+
+#jobs .job-card:hover #arrow {
+    stroke: var(--light-color);
+}
+
 footer {
     margin-top: 128px;
 }
@@ -604,7 +686,7 @@ footer #menu-mobile {
     font-size: 14px;
     font-weight: 600;
     width: 100%;
-    padding: 16px 24px ;
+    padding: 16px 24px;
     border-radius: 8px;
     border: 1px solid var(--stroke-light);
     background-color: var(--bg-light);
@@ -713,6 +795,10 @@ footer #menu-mobile {
         grid-row: none;
         margin: 24px 0px;
     }
+
+    #jobs .content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 796px) {
@@ -742,7 +828,7 @@ footer #menu-mobile {
     }
 
     h4 {
-        font-size: 40px;
+        font-size: 24px;
     }
 
     h5 {
@@ -868,6 +954,7 @@ footer #menu-mobile {
     #works .card.card-large>.card-image {
         display: none;
     }
+
     #works .card>.card-image {
         height: 352px;
     }
@@ -878,13 +965,24 @@ footer #menu-mobile {
         width: 100%;
         margin: auto;
     }
+
     #works .card.card-large>.card-content {
         width: 100%;
         height: auto;
     }
+
     #works .card.card-large>.circle-button {
         margin-left: 0px;
     }
+
+    #jobs .content>.headline {
+        margin-left: 0px;
+    }
+
+    #jobs .jobs-cards-container>.job-card {
+        padding: 48px; 
+    }
+
     footer .menu {
         display: none;
     }
@@ -892,16 +990,20 @@ footer #menu-mobile {
     footer #menu-mobile {
         display: block;
     }
+
     footer hr {
         display: none;
     }
+
     footer .bottom {
         flex-direction: column-reverse;
     }
+
     footer .bottom>.copyright {
         margin-top: 24px;
         font-size: 14px;
     }
+
     footer .bottom>.social>li {
         font-size: 14px;
         margin-top: 24px;
