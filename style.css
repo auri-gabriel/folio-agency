@@ -367,7 +367,7 @@ button:active {
 }
 
 #works .tagline>.section-number,
-.section-tagline {
+#works .tagline>.section-tagline {
     color: var(--primary-color);
 }
 
