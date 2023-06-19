@@ -601,12 +601,12 @@ button:active {
     color: var(--text-body-dark);
 }
 
-#jobs .job-card #arrow {
+#jobs .job-card .arrow {
     margin-top: 32px;
     stroke: var(--dark-color);
 }
 
-#jobs .job-card:hover #arrow {
+#jobs .job-card:hover .arrow {
     stroke: var(--light-color);
 }
 
