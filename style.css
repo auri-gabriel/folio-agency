@@ -842,6 +842,9 @@ footer #menu-mobile {
         width: 100%;
     }
 
+    #works .card>h4{
+        margin-bottom: 0px;
+    }
     #works .card {
         width: 100%;
         margin: 24px 0px;
@@ -1074,6 +1077,7 @@ footer #menu-mobile {
 
     #works .card>.card-image {
         height: 352px;
+        order: -1;
     }
 
     #works .card.card-large>.card-image-mobile {
