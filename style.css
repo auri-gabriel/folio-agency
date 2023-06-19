@@ -106,6 +106,7 @@ button:active {
     padding: 24px 72px;
     background: var(--light-color);
     color: var(--dark-color);
+    z-index: 999;
     box-sizing: border-box;
 }
 
@@ -776,6 +777,9 @@ footer #menu-mobile {
         grid-column: none;
     }
 
+    #works .card-large>.card-image-mobile img {
+        max-height: 100%;
+    }
     #works .card>.card-image {
         width: 100%;
     }
