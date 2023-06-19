@@ -1,5 +1,8 @@
 # Folio Agency
 
+## Main Screen Size
+> 1440x1024
+
 ## Project Status
 This project is currently **in progress**. 🚧
 
