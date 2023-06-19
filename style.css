@@ -277,6 +277,15 @@ button:active {
     fill: #000;
 }
 
+.outline {
+    background: none;
+    border: 2px solid var(--dark-color);
+}
+
+.circle-button.outline>svg {
+    stroke: var(--dark-color);
+}
+
 .carrousel-nav {
     display: flex;
     flex-direction: row;
@@ -500,6 +509,13 @@ button:active {
     margin-left: -36px;
 }
 
+#works .card>.circle-button.outline {
+    margin-left: 0px;
+    position: relative;
+    left: 440px;
+    bottom: 224px;
+}
+
 #works .card-large {
     grid-column: span 2;
 }
@@ -562,9 +578,11 @@ button:active {
     margin-left: calc(128px + 24px);
     color: var(--dark-color);
 }
+
 #jobs .content>.headline p {
     color: var(--text-body-light);
 }
+
 #jobs .jobs-cards-container {
     display: flex;
     flex-direction: column;
@@ -796,6 +814,13 @@ footer #menu-mobile {
         margin: 24px 0px;
     }
 
+    #works .card>.circle-button.outline {
+        margin-left: 0px;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+
     #jobs .content {
         grid-template-columns: 1fr;
     }
@@ -859,6 +884,15 @@ footer #menu-mobile {
         width: 16px;
         height: 16px;
         fill: #000;
+    }
+
+    .outline {
+        background: none;
+        border: 2px solid var(--dark-color);
+    }
+
+    .circle-button.outline>svg {
+        stroke: var(--dark-color);
     }
 
     #about .content {
@@ -975,12 +1009,16 @@ footer #menu-mobile {
         margin-left: 0px;
     }
 
+    #works .card>.circle-button {
+        margin-left: 0px;
+    }
+
     #jobs .content>.headline {
         margin-left: 0px;
     }
 
     #jobs .jobs-cards-container>.job-card {
-        padding: 48px; 
+        padding: 48px;
     }
 
     footer .menu {
