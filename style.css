@@ -1,4 +1,5 @@
 :root {
+   /* Color variables */ 
     --primary-color: #5468E7;
     --primary-shade: #D1ECFD;
     --secondary-color: #C897E4;
@@ -13,9 +14,11 @@
     --text-body-dark: #8B8B8B;
     --text-disabled: #ADADAD;
     --stroke-light: #D8D8D8;
+    /* font family */
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Reset heading margins */
 h1,
 h2,
 h3,
@@ -25,6 +28,7 @@ h6 {
     margin: 0;
 }
 
+/* Body styles */
 body {
     font-size: 18px;
     margin: 0;
