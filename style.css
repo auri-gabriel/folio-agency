@@ -629,6 +629,63 @@ button:active {
     stroke: var(--light-color);
 }
 
+#contacts .cta-wrapper {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 700;
+
+}
+
+.cta-wrapper>.header {
+    grid-column: span 2;
+    padding: 64px;
+    text-align: center;
+    border-bottom: 1px solid var(--stroke-light);
+}
+
+.cta-wrapper>.phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+    border-right: 1px solid var(--stroke-light);
+}
+
+.cta-wrapper>.phrase>button {
+    display: none;
+    margin-top: 48px;
+    color: var(--primary-color);
+    background-color: var(--text-light);
+    width: 100%;
+}
+
+.cta-wrapper>.cta {
+    padding: 64px;
+}
+
+.cta>.bubble img {
+    width: 103px;
+    height: 103px;
+}
+
+.cta-line {
+    display: flex;
+    gap: 96px;
+    flex-direction: row;
+}
+
+.cta-line>.outline {
+    border-color: var(--text-light);
+}
+
+.cta-line>.outline svg {
+    stroke: var(--text-light);
+}
+
 footer {
     margin-top: 128px;
 }
@@ -780,6 +837,7 @@ footer #menu-mobile {
     #works .card-large>.card-image-mobile img {
         max-height: 100%;
     }
+
     #works .card>.card-image {
         width: 100%;
     }
@@ -828,6 +886,27 @@ footer #menu-mobile {
     #jobs .content {
         grid-template-columns: 1fr;
     }
+
+    #contacts .cta-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-wrapper>.header {
+        grid-column: span 1;
+    }
+
+    .cta-wrapper>.phrase>button {
+        display: block;
+    }
+
+    #contacts .cta-wrapper>.phrase {
+        column-span: all;
+        border-right: none;
+    }
+
+    #contacts .cta-wrapper>.cta {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 796px) {
@@ -853,7 +932,7 @@ footer #menu-mobile {
     }
 
     h3 {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     h4 {
@@ -865,7 +944,7 @@ footer #menu-mobile {
     }
 
     h6 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     p {
