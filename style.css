@@ -1,5 +1,5 @@
 :root {
-   /* Color variables */ 
+    /* Color variables */
     --primary-color: #5468E7;
     --primary-shade: #D1ECFD;
     --secondary-color: #C897E4;
@@ -113,6 +113,15 @@ button:active {
     z-index: 999;
     box-sizing: border-box;
 }
+
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu-wrapper {
+    display: none;
+}
+
 
 .navbar>.menu {
     display: flex;
@@ -798,6 +807,44 @@ footer #menu-mobile {
 
     .navbar>.hamburger {
         display: block;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .mobile-menu-wrapper {
+        z-index: 998;
+        display: none;
+        position: absolute;
+        top: 92px;
+        right: 0;
+        height: calc(100vh - 92px);
+        width: calc(100% - 100px);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-menu {
+        padding: 0;
+    }
+
+    .mobile-menu>li {
+        list-style: none;
+        margin: 12px 12px;
+    }
+
+    .mobile-menu>li>a {
+        font-size: 48px;
+        text-decoration: none;
+        color: var(--dark-color);
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-toggle:checked+.mobile-menu-wrapper {
+        display: block;
     }
 
     #hero>.wrapper {
@@ -846,9 +893,10 @@ footer #menu-mobile {
         width: 100%;
     }
 
-    #works .card>h4{
+    #works .card>h4 {
         margin-bottom: 0px;
     }
+
     #works .card {
         width: 100%;
         margin: 24px 0px;
