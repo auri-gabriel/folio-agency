@@ -412,8 +412,11 @@ button:active {
   color: var(--text-light);
   font-weight: 800;
   border-radius: 50%;
-  width: 312px;
-  height: 312px;
+  width: 100%;
+  max-width: 312px;
+  aspect-ratio: 1 / 1;
+  padding: 24px;
+  box-sizing: border-box;
   box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.24);
 }
 
