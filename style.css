@@ -745,7 +745,7 @@ button:active {
   grid-column: span 2;
   padding: 64px;
   text-align: center;
-  border-bottom: 1px solid var(--stroke-light);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .cta-wrapper > .phrase {
@@ -754,7 +754,7 @@ button:active {
   justify-content: center;
   align-items: center;
   padding: 64px;
-  border-right: 1px solid var(--stroke-light);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .cta-wrapper > .phrase > button {
