@@ -358,6 +358,15 @@ button:active {
   border: 2px solid var(--dark-color);
 }
 
+.circle-button.outline:hover {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.circle-button.outline:hover > svg {
+  stroke: var(--light-color);
+}
+
 .circle-button.outline > svg {
   stroke: var(--dark-color);
 }
