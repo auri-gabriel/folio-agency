@@ -1,29 +1,36 @@
 # Folio Agency
 
-## Main Screen Size
-> 1440x1024
+A modern, responsive landing page designed for creative agencies to showcase their portfolio, services, and team. Built with clean HTML and CSS, this project demonstrates professional web design principles with smooth animations and an engaging user experience.
 
-## Project Status
-This project is currently **in progress**. 🚧
+![Folio Agency Screenshot](screenshots/screenshot.png)
 
-> **Polishing needed**
+## 📋 Overview
 
-### Screens
+Folio Agency is a single-page website featuring a contemporary design optimized for desktop viewing (1440x1024). The site presents a complete agency presence through seven distinct sections, each carefully crafted to highlight different aspects of the business.
 
-- [x] Hero (Completed) ✅
-- [x] About (Completed) ✅
-- [x] Services (Completed) ✅
-- [x] Works (Completed) ✅
-- [x] Jobs (Completed) ✅
-- [x] CTA (Completed) ✅
-- [x] Footer (Completed) ✅
+## ✨ Features
 
-## Technologies Used
-- HTML
-- CSS
+- **Responsive Design**: Optimized for desktop viewing with a clean, modern aesthetic
+- **Smooth Animations**: Interactive elements with CSS transitions for enhanced user experience
+- **Complete Agency Showcase**: Multiple sections covering all aspects of an agency's online presence
+- **Clean Code Structure**: Well-organized HTML and CSS for easy maintenance and customization
+- **Performance Optimized**: Static site with fast loading times
 
-## Description
-Folio Agency is a responsive web application that showcases the portfolio and services of a creative agency. The project consists of six screens: Hero, About, Services, Works, Jobs, and Footer.
+## 🎨 Sections
+
+- **Hero** - Eye-catching landing section with compelling call-to-action
+- **About** - Company introduction and mission statement
+- **Services** - Detailed overview of agency offerings
+- **Works** - Portfolio showcase of completed projects
+- **Jobs** - Career opportunities and team highlights
+- **CTA** - Strategic call-to-action for lead generation
+- **Footer** - Contact information and social links
+
+## 🛠️ Technologies Used
+
+- HTML5 - Semantic markup structure
+- CSS3 - Modern styling with flexbox/grid layouts and animations
+- Vanilla JavaScript - Interactive functionality
 
 ## Getting Started
 To run this project locally, follow these steps:
