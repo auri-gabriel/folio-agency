@@ -242,6 +242,7 @@ button:active {
   display: flex;
   flex-direction: row;
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 .tagline > .tagline-logo {
