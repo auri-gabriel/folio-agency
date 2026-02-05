@@ -1,431 +1,696 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Folio Agency</title>
-    <link rel="stylesheet" href="style.css" media="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/logo-symbol.png">
+    <link rel="stylesheet" href="style.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/logo-symbol.png" />
     <script src="script.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar">
-            <h2 style="display: none;">Main Navigation</h2>
-            <div class="logo">
-                <img src="images/logo.svg" alt="Folio">
-            </div>
-            <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#jobs">Jobs <span class="badge">2</span></a></li>
-            </ul>
-            <button class="dark">Contact Us</button>
-            <label for="menu-toggle" class="hamburger">
-                <img src="images/burger-icon.svg" alt="Menu">
-            </label>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <div class="mobile-menu-wrapper">
-                <ul class="mobile-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Work</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#jobs">Jobs</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <h2 style="display: none">Main Navigation</h2>
+        <div class="logo">
+          <img src="images/logo.svg" alt="Folio" />
+        </div>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li>
+            <a href="#jobs">Jobs <span class="badge">2</span></a>
+          </li>
+        </ul>
+        <button class="dark">Contact Us</button>
+        <label for="menu-toggle" class="hamburger">
+          <img src="images/burger-icon.svg" alt="Menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <div class="mobile-menu-wrapper">
+          <ul class="mobile-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section id="hero">
-        <div class="container wrapper">
-            <div class="content">
-                <h2 class="display-2">
-                    Stand Out from The Crowd
-                </h2>
-                <p>
-                    Agency is a full-service agency, busy designing and building beautiful digital products, brands, and
-                    experiences.
-                </p>
-                <button class="primary">
-                    Recent Work
-                </button>
-            </div>
-            <div class="hero-img">
-                <img src="./images/hero.png" alt="">
-            </div>
+      <div class="container wrapper">
+        <div class="content">
+          <h2 class="display-2">Stand Out from The Crowd</h2>
+          <p>
+            Agency is a full-service agency, busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
+          <button class="primary">Recent Work</button>
         </div>
+        <div class="hero-img">
+          <img src="./images/hero.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <div class="container">
-            <div class="tagline">
-                <div class="tagline-logo">
-                    <img src="./images/logo-symbol.png" alt="Folio Agency">
-                </div>
-                <span class="section-number">01</span>
-                <span class="section-tagline">Who We Are</span>
-            </div>
-
-            <div class="headline">
-                <h2>
-                    We Make Designs that Lead and Inspire.
-                </h2>
-                <div class="carrousel-nav">
-                    <button class="circle-button">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g transform="translate(22, 0) scale(-1, 1)">
-                                <path d="M1 8L21 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M14 1L21 8L14 15" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                    </button>
-                    <button class="circle-button">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="carrousel">
-                <div class="years">
-                    <a class="year" href="">2017</a>
-                    <a class="year" href="">2018</a>
-                    <a class="year" href="">2019</a>
-                    <a class="year active" href="">2020</a>
-                    <a class="year" href="">2021</a>
-                </div>
-                <img src="./images/about.png" alt="About Us">
-            </div>
-            <div class="content">
-                <div class="content-text">
-                    <h5>
-                        A design team building a curated marketplace for UI designers.
-                    </h5>
-                    <p>
-                        4,404 cureated design resources to energize your creative workflow. We're a growing family of
-                        334,531
-                        designers and makers from around the world.
-                    </p>
-                    <button class="primary">
-                        Contact Us
-                    </button>
-                </div>
-                <div class="circle-wrapper">
-                    <div class="circle">
-                        <span class="display-1">
-                            28th
-                        </span>
-                        <span class="display-3">
-                            Biggest Brand
-                        </span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="tagline">
+          <div class="tagline-logo">
+            <img src="./images/logo-symbol.png" alt="Folio Agency" />
+          </div>
+          <span class="section-number">01</span>
+          <span class="section-tagline">Who We Are</span>
         </div>
+
+        <div class="headline">
+          <h2>We Make Designs that Lead and Inspire.</h2>
+          <div class="carrousel-nav">
+            <button class="circle-button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g transform="translate(22, 0) scale(-1, 1)">
+                  <path
+                    d="M1 8L21 8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 1L21 8L14 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+            <button class="circle-button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="carrousel">
+          <div class="years">
+            <a class="year" href="">2017</a>
+            <a class="year" href="">2018</a>
+            <a class="year" href="">2019</a>
+            <a class="year active" href="">2020</a>
+            <a class="year" href="">2021</a>
+          </div>
+          <img src="./images/about.png" alt="About Us" />
+        </div>
+        <div class="content">
+          <div class="content-text">
+            <h5>
+              A design team building a curated marketplace for UI designers.
+            </h5>
+            <p>
+              4,404 cureated design resources to energize your creative
+              workflow. We're a growing family of 334,531 designers and makers
+              from around the world.
+            </p>
+            <button class="primary">Contact Us</button>
+          </div>
+          <div class="circle-wrapper">
+            <div class="circle">
+              <span class="display-1"> 28th </span>
+              <span class="display-3"> Biggest Brand </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="services">
-        <div class="container">
-            <div class="tagline">
-                <div class="tagline-logo"><img src="./images/logo-symbol.png" alt="Folio Agency"></div><span
-                    class="section-number">02</span><span class="section-tagline">What We Do</span>
-            </div>
-            <div class="headline">
-                <h2>We Make Designs that Lead and Inspire.
-                </h2>
-                <div class="carrousel-nav">
-                    <button class="circle-button">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g transform="translate(22, 0) scale(-1, 1)">
-                                <path d="M1 8L21 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M14 1L21 8L14 15" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                    </button>
-                    <button class="circle-button">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img class="service-card-icon" src="./images/icon-strategy.png" alt="">
-                    <h6 class="service-card-title">Strategy</h6>
-                </div>
-                <div class="service-card active">
-                    <img class="service-card-icon" src="./images/icon-branding.png" alt="">
-                    <h6 class="service-card-title">Branding</h6>
-                </div>
-                <div class="service-card">
-                    <img class="service-card-icon" src="./images/icon-interactive.png" alt="">
-                    <h6 class="service-card-title">Interactive</h6>
-                </div>
-                <div class="service-card">
-                    <img class="service-card-icon" src="./images/icon-communicate.png" alt="">
-                    <h6 class="service-card-title">Communicate</h6>
-                </div>
-            </div>
+      <div class="container">
+        <div class="tagline">
+          <div class="tagline-logo">
+            <img src="./images/logo-symbol.png" alt="Folio Agency" />
+          </div>
+          <span class="section-number">02</span
+          ><span class="section-tagline">What We Do</span>
         </div>
+        <div class="headline">
+          <h2>We Make Designs that Lead and Inspire.</h2>
+          <div class="carrousel-nav">
+            <button class="circle-button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g transform="translate(22, 0) scale(-1, 1)">
+                  <path
+                    d="M1 8L21 8"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 1L21 8L14 15"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+              </svg>
+            </button>
+            <button class="circle-button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="service-cards">
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./images/icon-strategy.png"
+              alt=""
+            />
+            <h6 class="service-card-title">Strategy</h6>
+          </div>
+          <div class="service-card active">
+            <img
+              class="service-card-icon"
+              src="./images/icon-branding.png"
+              alt=""
+            />
+            <h6 class="service-card-title">Branding</h6>
+          </div>
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./images/icon-interactive.png"
+              alt=""
+            />
+            <h6 class="service-card-title">Interactive</h6>
+          </div>
+          <div class="service-card">
+            <img
+              class="service-card-icon"
+              src="./images/icon-communicate.png"
+              alt=""
+            />
+            <h6 class="service-card-title">Communicate</h6>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="works">
-        <div class="container">
-            <div class="tagline">
-                <div class="tagline-logo"><img src="./images/logo-symbol.png" alt="Folio Agency"></div><span
-                    class="section-number">03</span><span class="section-tagline">Famous Projects</span>
-            </div>
-            <div class="headline">
-                <div class="text">
-                    <h2>Our Partnerships</h2>
-                    <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands,
-                        and experiences.</p>
-                </div>
-                <button class="primary">
-                    Contact Us
-                </button>
-            </div>
-            <div class="card-container">
-                <div class="card card-large">
-                    <div class="card-image-mobile"><img src="./images/female-running-colorful-2.png" alt=""></div>
-                    <div class="card-content">
-                        <h4>Sapiens: The Free Character Builder App.</h4>
-                        <span class="featured-badge">
-                            Featured Product
-                        </span>
-                        <p class="card-text">Beautiful library of modular, component-based character illustrations free
-                            to use for all your personal or client projects.</p>
-                    </div>
-                    <div class="card-image"><img src="./images/female-running-colorful-2.png" alt=""></div>
-                    <button class="circle-button">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="card">
-                    <h4>Bento Vol. 2</h4>
-                    <div class="card-image"><img src="./images/bento-vol-2.png" alt=""></div>
-                    <div class="card-content">
-                        <p class="card-text">Agency is a full-service agency, busy designing and building beautiful
-                            digital products, brands, and experiences.</p>
-                    </div>
-                    <button class="circle-button outline">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="card">
-                    <h4>Bento 3D Illustration</h4>
-                    <div class="card-image"><img src="./images/Bento-3d.png" alt=""></div>
-                    <div class="card-content">
-                        <p class="card-text">Beautiful library of modular, component-based character illustrations free
-                            to use for all your personal or client projects.</p>
-                    </div>
-                    <button class="circle-button outline">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="card">
-                    <h4>Bento Vol. 3</h4>
-                    <div class="card-image"><img src="./images/bento-vol-3.png" alt=""></div>
-                    <div class="card-content">
-                        <p class="card-text">Beautiful library of modular, component-based character illustrations free
-                            to use for all your personal or client projects.</p>
-                    </div>
-                    <button class="circle-button outline">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-
-                </div>
-                <div class="card">
-                    <h4>Sapiens: Man</h4>
-                    <div class="card-image"><img src="./images/male-walking-colorful-3.png" alt=""></div>
-                    <div class="card-content">
-                        <p class="card-text">Beautiful library of modular, component-based character illustrations free
-                            to use for all your personal or client projects.</p>
-                    </div>
-                    <button class="circle-button outline">
-                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </button>
-
-                </div>
-            </div>
+      <div class="container">
+        <div class="tagline">
+          <div class="tagline-logo">
+            <img src="./images/logo-symbol.png" alt="Folio Agency" />
+          </div>
+          <span class="section-number">03</span
+          ><span class="section-tagline">Famous Projects</span>
         </div>
+        <div class="headline">
+          <div class="text">
+            <h2>Our Partnerships</h2>
+            <p>
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+          </div>
+          <button class="primary">Contact Us</button>
+        </div>
+        <div class="card-container">
+          <div class="card card-large">
+            <div class="card-image-mobile">
+              <img src="./images/female-running-colorful-2.png" alt="" />
+            </div>
+            <div class="card-content">
+              <h4>Sapiens: The Free Character Builder App.</h4>
+              <span class="featured-badge"> Featured Product </span>
+              <p class="card-text">
+                Beautiful library of modular, component-based character
+                illustrations free to use for all your personal or client
+                projects.
+              </p>
+            </div>
+            <div class="card-image">
+              <img src="./images/female-running-colorful-2.png" alt="" />
+            </div>
+            <button class="circle-button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="card">
+            <h4>Bento Vol. 2</h4>
+            <div class="card-image">
+              <img src="./images/bento-vol-2.png" alt="" />
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Agency is a full-service agency, busy designing and building
+                beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+            <button class="circle-button outline">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="card">
+            <h4>Bento 3D Illustration</h4>
+            <div class="card-image">
+              <img src="./images/Bento-3d.png" alt="" />
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Beautiful library of modular, component-based character
+                illustrations free to use for all your personal or client
+                projects.
+              </p>
+            </div>
+            <button class="circle-button outline">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="card">
+            <h4>Bento Vol. 3</h4>
+            <div class="card-image">
+              <img src="./images/bento-vol-3.png" alt="" />
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Beautiful library of modular, component-based character
+                illustrations free to use for all your personal or client
+                projects.
+              </p>
+            </div>
+            <button class="circle-button outline">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="card">
+            <h4>Sapiens: Man</h4>
+            <div class="card-image">
+              <img src="./images/male-walking-colorful-3.png" alt="" />
+            </div>
+            <div class="card-content">
+              <p class="card-text">
+                Beautiful library of modular, component-based character
+                illustrations free to use for all your personal or client
+                projects.
+              </p>
+            </div>
+            <button class="circle-button outline">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="jobs">
-        <div class="container">
-            <div class="tagline">
-                <div class="tagline-logo"><img src="./images/logo-symbol.png" alt="Folio Agency"></div><span
-                    class="section-number">03</span><span class="section-tagline">Famous Projects</span>
-            </div>
-            <div class="content">
-
-                <div class="headline">
-                    <div class="text">
-                        <h2 class="display-1">Jobs</h2>
-                        <p>Agency is a full-service agency, busy designing and building beautiful digital products,
-                            brands,
-                            and experiences.</p>
-                    </div>
-                    <button class="primary">
-                        Available Jobs
-                    </button>
-                </div>
-                <div class="jobs-cards-container">
-                    <div class="job-card">
-                        <div class="header">
-                            <h4>Graphic Designer</h4>
-                            <span class="badge">2</span>
-                        </div>
-                        <span class="job-experience">2 years experience</span>
-                        <svg class="arrow" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="job-card">
-                        <div class="header">
-                            <h4>Visual Designer</h4>
-                        </div>
-                        <span class="job-experience">2 years experience</span>
-                        <svg class="arrow" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="job-card">
-                        <div class="header">
-                            <h4>Art Director</h4>
-                        </div>
-                        <span class="job-experience">2 years experience</span>
-                        <svg class="arrow" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="job-card">
-                        <div class="header">
-                            <h4>Web Designer</h4>
-                            <span class="badge">6</span>
-                        </div>
-                        <span class="job-experience">2 years experience</span>
-                        <svg class="arrow" width="22" height="16" viewBox="0 0 22 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="tagline">
+          <div class="tagline-logo">
+            <img src="./images/logo-symbol.png" alt="Folio Agency" />
+          </div>
+          <span class="section-number">03</span
+          ><span class="section-tagline">Famous Projects</span>
         </div>
+        <div class="content">
+          <div class="headline">
+            <div class="text">
+              <h2 class="display-1">Jobs</h2>
+              <p>
+                Agency is a full-service agency, busy designing and building
+                beautiful digital products, brands, and experiences.
+              </p>
+            </div>
+            <button class="primary">Available Jobs</button>
+          </div>
+          <div class="jobs-cards-container">
+            <div class="job-card">
+              <div class="header">
+                <h4>Graphic Designer</h4>
+                <span class="badge">2</span>
+              </div>
+              <span class="job-experience">2 years experience</span>
+              <svg
+                class="arrow"
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="job-card">
+              <div class="header">
+                <h4>Visual Designer</h4>
+              </div>
+              <span class="job-experience">2 years experience</span>
+              <svg
+                class="arrow"
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="job-card">
+              <div class="header">
+                <h4>Art Director</h4>
+              </div>
+              <span class="job-experience">2 years experience</span>
+              <svg
+                class="arrow"
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="job-card">
+              <div class="header">
+                <h4>Web Designer</h4>
+                <span class="badge">6</span>
+              </div>
+              <span class="job-experience">2 years experience</span>
+              <svg
+                class="arrow"
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 8L21 8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14 1L21 8L14 15"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contacts">
-        <div class="container">
-            <div class="cta-wrapper">
-                <div class="header">
-                    <img src="./images/logo-symbol-cta.svg" alt="Folio Agency">
-                    <p>👋 Say Hello</p>
-                    <h6> A design team building a curated marketplace for UI designers</h6>
-                </div>
-                <div class="phrase">
-                    <h3>
-                        Let’s talk about your next project
-                    </h3>
-                    <button class="secondary">
-                        Contact Us
-                    </button>
-                </div>
-                <div class="cta">
-                    <div class="bubble">
-                        <img src="./images/bubble.png" alt="">
-                    </div>
-                    <div class="cta-line">
-                        <h6>Invest in your designs today!</h6>
-                        <button class="circle-button outline">
-                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 8L21 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M14 1L21 8L14 15" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="cta-wrapper">
+          <div class="header">
+            <img src="./images/logo-symbol-cta.svg" alt="Folio Agency" />
+            <p>👋 Say Hello</p>
+            <h6>
+              A design team building a curated marketplace for UI designers
+            </h6>
+          </div>
+          <div class="phrase">
+            <h3>Let’s talk about your next project</h3>
+            <button class="secondary">Contact Us</button>
+          </div>
+          <div class="cta">
+            <div class="bubble">
+              <img src="./images/bubble.png" alt="" />
             </div>
+            <div class="cta-line">
+              <h6>Invest in your designs today!</h6>
+              <button class="circle-button outline">
+                <svg
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 8L21 8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M14 1L21 8L14 15"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <img src="images/logo.svg" alt="Folio">
-                </div>
-                <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and
-                    experiences.</p>
-            </div>
-            <ul class="menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Jobs</a></li>
-            </ul>
-            <select id="menu-mobile" name="menu-mobile">
-                <option value="about">About</option>
-                <option value="work">Work</option>
-                <option value="services">Services</option>
-                <option value="jobs">Jobs</option>
-            </select>
-            <hr>
-            <div class="bottom">
-                <span class="copyright">© 2020, UI8 LLC.</span>
-                <ul class="social">
-                    <li>Follow Us</li>
-                    <li><a href="#"><img src="images/logo-facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="images/logo-youtube.svg" alt="YouTube"></a></li>
-                    <li><a href="#"><img src="images/logo-instagram.svg" alt="Instagram"></a></li>
-                </ul>
-
-            </div>
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+            <img src="images/logo.svg" alt="Folio" />
+          </div>
+          <p>
+            Agency is a full-service agency, busy designing and building
+            beautiful digital products, brands, and experiences.
+          </p>
         </div>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Jobs</a></li>
+        </ul>
+        <select id="menu-mobile" name="menu-mobile">
+          <option value="about">About</option>
+          <option value="work">Work</option>
+          <option value="services">Services</option>
+          <option value="jobs">Jobs</option>
+        </select>
+        <hr />
+        <div class="bottom">
+          <span class="copyright">© 2020, UI8 LLC.</span>
+          <span class="credit"
+            >Need a website?
+            <a
+              href="https://aurigabriel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Auri Gabriel</a
+            >.</span
+          >
+          <ul class="social">
+            <li>Follow Us</li>
+            <li>
+              <a href="#"
+                ><img src="images/logo-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/logo-youtube.svg" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/logo-instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
